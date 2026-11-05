@@ -4,351 +4,163 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Talha Butt — Data Science Student | Deep Learning &amp; Computer Vision</title>
-<meta name="description" content="Portfolio of Talha Butt — BS Data Science student building deep learning and computer vision projects, with live demos.">
-
+<meta name="description" content="Portfolio of Talha Butt, BS Data Science student building deep learning and computer vision projects with live demos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= NAV ================= -->
-<header class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#top" class="nav-brand">talha<span class="dot">.</span>butt</a>
-
-    <nav class="nav-links" id="navLinks">
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">talha<span>.</span>butt</a>
+    <nav class="links" id="navLinks">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#writing">Writing</a>
-      <a href="#contact" class="nav-cta">Contact</a>
+      <a href="#contact" class="cta" id="contactBtn">Contact</a>
     </nav>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
 <section class="hero" id="top">
-  <canvas id="attentionCanvas" class="hero-canvas"></canvas>
-
-  <div class="hero-content">
-    <p class="eyebrow">// data science student — deep learning &amp; computer vision</p>
-    <h1 class="hero-title">
-      I build systems<br> that learn from <span class="highlight">data</span>.
-    </h1>
-    <p class="hero-sub">
-      BS Data Science student building deep learning and computer vision
-      projects — a YOLO object detector, a fine-tuned speech emotion model,
-      and data tools — and shipping each one as a live demo.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">View projects</a>
-      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">BS Data Science student · open to paid remote internships</p>
+      <h1>I build systems that learn from <span class="hl">data</span>.</h1>
+      <p class="sub">I build deep learning and computer vision projects, like a YOLO object detector and a fine-tuned speech emotion model, and ship each one as a live demo you can try.</p>
+      <div class="actions">
+        <a href="#projects" class="btn primary">View projects</a>
+        <a href="#contact" class="btn ghost">Get in touch</a>
+      </div>
+      <p class="meta">Sheikhupura, Punjab, Pakistan</p>
     </div>
-
-    <div class="hero-meta">
-      <span>Sheikhupura, Punjab, Pakistan</span>
-      <span class="sep">·</span>
-      <span>Open to paid remote internships</span>
+    <div class="hero-shot">
+      <div class="frame">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <!-- EDIT: replace the div below with your screenshot:
+        <img src="biscuit.png" alt="Biscuit box detector showing detected boxes"> -->
+        <div class="shot-ph">Biscuit Box Detector<br><small>add your screenshot here</small></div>
+      </div>
     </div>
-  </div>
-
-  <div class="scroll-cue" aria-hidden="true">
-    <span>scroll</span>
-    <div class="scroll-line"></div>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
 <section class="section" id="about">
-  <div class="section-inner">
-    <p class="section-label">01 / About</p>
-    <div class="about-grid">
-      <h2 class="section-title">
-        Building real projects and putting them online where anyone can try them.
-      </h2>
-      <div class="about-body">
-        <p>
-          I'm a BS Data Science student at Virtual University of Pakistan,
-          studying fully online since 2024 and working hands-on with machine
-          learning projects alongside my coursework.
-        </p>
-        <p>
-          My focus is deep learning and computer vision. I trained a YOLO
-          model to detect biscuit boxes and deployed it as a live app, and
-          fine-tuned Wav2Vec2 on the RAVDESS dataset to classify emotion in
-          speech. I also built a transformer-based sentiment classifier from
-          scratch in PyTorch, and a Streamlit tool for automated exploratory
-          data analysis.
-        </p>
-        <p>
-          I spent part of a 6-week ML engineering internship at
-          <strong>FlyRank AI</strong>, working on data leakage detection and
-          decision tree pipelines, before leaving to focus on building my own
-          projects. I'm now looking for a paid remote internship in machine
-          learning or computer vision.
-        </p>
+  <div class="wrap">
+    <p class="label">01 / About</p>
+    <div class="two">
+      <h2>Building real projects and putting them online where anyone can try them.</h2>
+      <div class="body">
+        <p>I'm a BS Data Science student at Virtual University of Pakistan, studying fully online since 2024 and working on machine learning projects alongside my coursework.</p>
+        <p>My focus is deep learning and computer vision. I trained a YOLO model to detect biscuit boxes and deployed it as a live app, and fine-tuned Wav2Vec2 on the RAVDESS dataset to classify emotion in speech. I also built a transformer sentiment classifier from scratch in PyTorch and a Streamlit tool for exploratory data analysis.</p>
+        <p>I'm now looking for a paid remote internship in machine learning or computer vision, where I can work on real problems and learn from an experienced team.</p>
       </div>
     </div>
-
-    <div class="stat-row">
-      <div class="stat">
-        <span class="stat-num">3</span>
-        <span class="stat-label">projects with live demos</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">30+</span>
-        <span class="stat-label">GitHub repositories</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">2028</span>
-        <span class="stat-label">expected graduation, BS Data Science</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">Remote</span>
-        <span class="stat-label">open to paid internships</span>
-      </div>
+    <div class="stats">
+      <div class="stat"><b>Live</b><span>demos for my projects</span></div>
+      <div class="stat"><b>30+</b><span>GitHub repositories</span></div>
+      <div class="stat"><b>2028</b><span>expected graduation, BS Data Science</span></div>
+      <div class="stat"><b>Remote</b><span>open to paid internships</span></div>
     </div>
   </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section class="section section-alt" id="skills">
-  <div class="section-inner">
-    <p class="section-label">02 / Skills</p>
-    <h2 class="section-title">What I work with.</h2>
-
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h3>Deep Learning</h3>
-        <div class="tags">
-          <span class="tag">PyTorch</span>
-          <span class="tag">CNNs</span>
-          <span class="tag">Transfer Learning</span>
-          <span class="tag">Transformers (Wav2Vec2)</span>
-          <span class="tag">Scikit-learn</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Computer Vision &amp; Audio</h3>
-        <div class="tags">
-          <span class="tag">YOLO</span>
-          <span class="tag">Object Detection</span>
-          <span class="tag">Speech Emotion Recognition</span>
-          <span class="tag">Model Evaluation</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Data &amp; Tools</h3>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Pandas / NumPy</span>
-          <span class="tag">Seaborn / Matplotlib</span>
-          <span class="tag">Streamlit</span>
-          <span class="tag">Git &amp; GitHub</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>NLP (learning)</h3>
-        <div class="tags">
-          <span class="tag">HuggingFace</span>
-          <span class="tag">RAG basics</span>
-          <span class="tag">Word2Vec</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Ways of working</h3>
-        <div class="tags">
-          <span class="tag">Remote / Async</span>
-          <span class="tag">Technical Writing</span>
-        </div>
-      </div>
+<section class="section alt" id="skills">
+  <div class="wrap">
+    <p class="label">02 / Skills</p>
+    <h2>What I work with.</h2>
+    <div class="grid skills">
+      <div class="card"><h3>Deep Learning</h3><div class="tags"><span>PyTorch</span><span>CNNs</span><span>Transfer Learning</span><span>Transformers (Wav2Vec2)</span><span>Scikit-learn</span></div></div>
+      <div class="card"><h3>Computer Vision &amp; Audio</h3><div class="tags"><span>YOLO</span><span>Object Detection</span><span>Speech Emotion Recognition</span><span>Model Evaluation</span></div></div>
+      <div class="card"><h3>Data &amp; Tools</h3><div class="tags"><span>Python</span><span>Pandas / NumPy</span><span>Seaborn / Matplotlib</span><span>Streamlit</span><span>Git &amp; GitHub</span></div></div>
+      <div class="card"><h3>NLP (learning)</h3><div class="tags"><span>HuggingFace</span><span>RAG basics</span><span>Word2Vec</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ================= EXPERIENCE ================= -->
 <section class="section" id="experience">
-  <div class="section-inner">
-    <p class="section-label">03 / Experience</p>
-    <h2 class="section-title">Where I've been building.</h2>
-
+  <div class="wrap">
+    <p class="label">03 / Experience</p>
+    <h2>Where I've been building.</h2>
     <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">2026</div>
-        <div class="timeline-content">
-          <h3>ML Engineering Intern — FlyRank AI</h3>
-          <p>
-            Part of a 6-week machine learning engineering internship. Worked
-            on data leakage detection notebooks and decision tree pipelines,
-            version-controlled and delivered through GitHub. Left to focus on
-            building my own deep learning projects.
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">2026 — Present</div>
-        <div class="timeline-content">
-          <h3>Independent projects</h3>
-          <p>
-            Building and deploying my own computer vision and deep learning
-            projects, each with a public GitHub repo and a live demo.
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">2024 — Present</div>
-        <div class="timeline-content">
-          <h3>BS Data Science — Virtual University of Pakistan</h3>
-          <p>
-            Fully online. Coursework and self-directed study spanning classical
-            ML, deep learning, and NLP fundamentals.
-          </p>
-        </div>
-      </div>
+      <div class="tl"><span class="date">2026 — Present</span><div><h3>Independent projects</h3><p>Building and deploying my own computer vision and deep learning projects, each with a public GitHub repo and a live demo.</p></div></div>
+      <div class="tl"><span class="date">2024 — Present</span><div><h3>BS Data Science — Virtual University of Pakistan</h3><p>Fully online. Coursework and self-directed study across classical ML, deep learning, and NLP fundamentals.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section class="section section-alt" id="projects">
-  <div class="section-inner">
-    <p class="section-label">04 / Projects</p>
-    <h2 class="section-title">Selected work.</h2>
-    <p class="section-desc">
-      Three projects you can try right now. More on
-      <a href="https://github.com/talhabutt72" target="_blank" rel="noopener">GitHub</a>.
-    </p>
+<section class="section alt" id="projects">
+  <div class="wrap">
+    <p class="label">04 / Projects</p>
+    <h2>Selected work.</h2>
+    <p class="desc">Projects you can try right now. More on <a href="https://github.com/talhabutt72" target="_blank" rel="noopener">GitHub</a>.</p>
+    <div class="grid projects">
 
-    <div class="projects-grid">
-
-      <article class="project-card">
-        <div class="project-top">
-          <span class="project-tag">Computer Vision · YOLO</span>
-        </div>
+      <article class="card project">
+        <span class="ptag">Computer Vision · YOLO</span>
         <h3>Biscuit Box Detector</h3>
-        <p>
-          A YOLO object detection model that finds biscuit boxes in images,
-          deployed as a Streamlit app. Upload a photo and see the detected
-          boxes and labels.
-        </p>
-        <div style="display:flex;gap:18px;flex-wrap:wrap;">
-          <a href="https://biscuit-box-detector-app.streamlit.app/" target="_blank" rel="noopener" class="project-link">Live demo →</a>
-          <a href="https://github.com/talhabutt72" target="_blank" rel="noopener" class="project-link">Code →</a>
-          <!-- EDIT: replace the Code href above with the exact biscuit box repo link -->
+        <p>A YOLO object detection model that finds biscuit boxes in images, deployed as a Streamlit app. Upload a photo and see the detected boxes and labels.</p>
+        <div class="plinks">
+          <a href="https://biscuit-box-detector-app.streamlit.app/" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/talhabutt72" target="_blank" rel="noopener">Code →</a>
+          <!-- EDIT: replace the Code link above with the exact biscuit box repo URL -->
         </div>
       </article>
 
-      <article class="project-card">
-        <div class="project-top">
-          <span class="project-tag">Audio · PyTorch</span>
-        </div>
+      <article class="card project">
+        <span class="ptag">Audio · PyTorch</span>
         <h3>Emotion in Voice</h3>
-        <p>
-          A speech emotion classifier. Wav2Vec2-base fine-tuned on the RAVDESS
-          dataset to recognize emotions like happy, sad, angry and calm, with
-          a Streamlit app for uploading audio.
-        </p>
-        <div style="display:flex;gap:18px;flex-wrap:wrap;">
-          <a href="https://emotion-in-voice-new.streamlit.app/" target="_blank" rel="noopener" class="project-link">Live demo →</a>
-          <a href="https://github.com/talhabutt72/emotion-in-voice" target="_blank" rel="noopener" class="project-link">Code →</a>
+        <p>A speech emotion classifier. Wav2Vec2-base fine-tuned on the RAVDESS dataset to recognize emotions like happy, sad, angry and calm, with a Streamlit app for uploading audio.</p>
+        <div class="plinks">
+          <a href="https://emotion-in-voice-new.streamlit.app/" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/talhabutt72/emotion-in-voice" target="_blank" rel="noopener">Code →</a>
         </div>
       </article>
 
-      <article class="project-card">
-        <div class="project-top">
-          <span class="project-tag">Data Tool · Streamlit</span>
-        </div>
+      <article class="card project">
+        <span class="ptag">Data Tool · Streamlit</span>
         <h3>AutoEDA</h3>
-        <p>
-          Upload a CSV or Excel file to explore, plot and clean it in the
-          browser: missing values, duplicates, outliers, correlations, and
-          basic encoding.
-        </p>
-        <div style="display:flex;gap:18px;flex-wrap:wrap;">
-          <a href="https://autoeda-by-talha.streamlit.app/" target="_blank" rel="noopener" class="project-link">Live demo →</a>
-          <a href="https://github.com/talhabutt72/AutoEda" target="_blank" rel="noopener" class="project-link">Code →</a>
+        <p>Upload a CSV or Excel file to explore, plot and clean it in the browser: missing values, duplicates, outliers, correlations, and basic encoding.</p>
+        <div class="plinks">
+          <a href="https://autoeda-by-talha.streamlit.app/" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/talhabutt72/AutoEda" target="_blank" rel="noopener">Code →</a>
         </div>
       </article>
 
-      <article class="project-card">
-        <div class="project-top">
-          <span class="project-tag">NLP · PyTorch</span>
-        </div>
+      <article class="card project">
+        <span class="ptag">NLP · PyTorch</span>
         <h3>Transformer Sentiment Classifier</h3>
-        <p>
-          Built from scratch in PyTorch — multi-head attention and learned
-          positional embeddings trained on IMDB-style review data, without
-          relying on pre-built transformer libraries.
-        </p>
-        <a href="https://github.com/talhabutt72" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-        <!-- EDIT: replace href above with the exact repo link, and delete this card if the repo is not public -->
-      </article>
-
-      <article class="project-card project-card-cta">
-        <h3>More on GitHub</h3>
-        <p>30+ repositories covering ML, deep learning, and data science.</p>
-        <a href="https://github.com/talhabutt72" target="_blank" rel="noopener" class="project-link">
-          github.com/talhabutt72 →
-        </a>
+        <p>Built from scratch in PyTorch: multi-head attention and learned positional embeddings trained on IMDB-style review data, without pre-built transformer libraries.</p>
+        <div class="plinks">
+          <a href="https://github.com/talhabutt72" target="_blank" rel="noopener">Code →</a>
+          <!-- EDIT: use the exact repo URL, or delete this whole article if the repo is not public -->
+        </div>
       </article>
 
     </div>
   </div>
 </section>
 
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section class="section section-contact" id="contact">
-  <div class="section-inner">
-    <p class="section-label">06 / Contact</p>
-    <h2 class="section-title contact-title">Let's build something.</h2>
-    <p class="section-desc">
-      Open to paid remote internships in machine learning and computer vision,
-      and to interesting collaborations. Best way to reach me is LinkedIn or email.
-    </p>
-
-    <div class="contact-grid">
-      <!-- EDIT: uncomment this card and put in your real email address
-      <a href="mailto:YOUR-EMAIL" class="contact-card">
-        <span class="contact-label">Email</span>
-        <span class="contact-value">YOUR-EMAIL</span>
-      </a>
+<section class="section" id="contact">
+  <div class="wrap">
+    <p class="label">05 / Contact</p>
+    <h2>Let's build something.</h2>
+    <p class="desc">Open to paid remote internships in machine learning and computer vision, and to interesting collaborations. Best way to reach me is LinkedIn or email.</p>
+    <div class="grid contact">
+      <!-- EDIT: remove these comment markers and put in your real email
+      <a href="mailto:YOUR-EMAIL" class="card c-card"><span>Email</span><b>YOUR-EMAIL</b></a>
       -->
-      <a href="https://www.linkedin.com/in/talhabutt7810/" target="_blank" rel="noopener" class="contact-card">
-        <span class="contact-label">LinkedIn</span>
-        <span class="contact-value">/in/talhabutt7810</span>
-      </a>
-      <a href="https://github.com/talhabutt72" target="_blank" rel="noopener" class="contact-card">
-        <span class="contact-label">GitHub</span>
-        <span class="contact-value">@talhabutt72</span>
-      </a>
+      <a href="https://www.linkedin.com/in/talhabutt7810/" target="_blank" rel="noopener" class="card c-card"><span>LinkedIn</span><b>/in/talhabutt7810</b></a>
+      <a href="https://github.com/talhabutt72" target="_blank" rel="noopener" class="card c-card"><span>GitHub</span><b>@talhabutt72</b></a>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="section-inner footer-inner">
-    <span>© <span id="year"></span> Talha Butt.</span>
-    <span>Built with HTML, CSS &amp; JS — hosted on GitHub Pages.</span>
-  </div>
-</footer>
+<footer class="footer"><div class="wrap foot"><span>© <span id="year"></span> Talha Butt.</span><span>Built with HTML, CSS &amp; JS, hosted on GitHub Pages.</span></div></footer>
 
 <script src="script.js"></script>
 </body>
